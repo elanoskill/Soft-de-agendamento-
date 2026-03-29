@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../public/kino.svg">
+   <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>   
+    <!--div que contem a imgem do delivery-->
+    <div class="img">
+        <!-- aqui esta a imagem do homem da byke-->
+
+    </div>
+         <!-- div formulario-->
+    <div class=" formulario">
+        <!--Logo do kino-->
+        <img src="../public/kino (1).svg" alt="logotipo do kino" width="80px" height="80px" id="logo">
+        <H1>Iniciar Sessão</H1>
+        <!--formulario de login, com oss seus respetivos campos-->
+        <form id="form">
+             <label for="user">Usuário</label>
+             <input type="text" id="user" placeholder="Introduza dados de Usuário" required>
+        <label for="senha">Palavra-passe</label>
+        <input type="text" id="senha" placeholder="Introduza palavra-passe de Usuário" autocomplete="no" required>
+        <button type="submit" id="btn"><div class="load"><div class="loading"></div></div>Entrar</button>
+        <p>___Esqueci palavra-passe <a href="#">clica aqui</a>___</p>
+        <!--Div para sessao de outra forma, face ou google-->
+        <div class="logarFaceGoogle">
+            <button>Facebook</button>
+            <button>Google</button>
+        </div>
+        </form>
+        
+        <p>Não tem conta? <a href="#" id="criar">Criar</a></p>
+       
+    </div>
+
+     <!--Modal para criar conta-->
+    <div class="modal">
+        <div class="criarConta">
+             <!--Logo do kino-->
+            <img src="../public/kino (1).svg" alt="logotipo do kino" width="80px" height="80px" id="logo-Conta">
+            <H1>Criar Conta</H1>
+        <!--formulario conta conta, com oss seus respetivos campos-->
+        <form id="form-criar">
+            <label for="NomeCriar">Nome</label>
+            <input type="text" id="NomeCriar" placeholder="Introduza Nome" autocomplete="no" required>
+            <label for="userCriar">Usuário</label>
+            <input type="text" id="userCriar" placeholder="Introduza  Usuário" autocomplete="no" required>
+            <label for="senhaCriar">Palavra-passe</label>
+            <input type="password" id="senhaCriar" placeholder="Introduza palavra-passe" autocomplete="no" required>
+            <div class="estudante">
+                <!--Div para selecao de estudante-->
+                
+                <div class="opcao">
+                    <!--<h4>Estudante?</h4>
+                    <label >Sim</label><input class="input" type="radio" value="sim" name="estudante" required>
+                    <label >Não</label><input type="radio" value="não" name="estudante" required>-->
+                    </div>
+            </div>
+            
+            <button type="submit"> Criar conta</button>
+        </form>
+            <p id="paEntrar">já tem conta? <a href="#" id="entrar">Entrar</a></p>
+        </div>
+     </div>
+     
+        <!--Div que vai mostrar notificação de erro de login-->
+     <div class="notificacao">
+        <p>Erro, senha ou usuário errado!</p>
+    </div>
+     
+    <script src="script.js"></script>
+</body>
+</html>
