@@ -46,7 +46,7 @@
     }
     /* estilizacao dos inputs do login*/
     #form input,#form-criar input{
-        height: 35px;
+        height: 40px;
         margin: 5px 0;
         border: 1px orangered  solid;
         border-radius: 10px;
@@ -55,7 +55,7 @@
     }
     /*estilos do botao */
     #btn, #form-criar button{
-        height: 35px;
+        height: 40px;
         background-color: orange;
         border-radius: 10px;
         color: #fff;
@@ -99,6 +99,10 @@
     /*estilização do paragro para recurar senha*/
     #form p{
         margin: 15px 0;
+        text-align: center;
+        
+    }
+    #form p a{
         text-decoration: none;
     }
 
@@ -299,6 +303,9 @@
         margin: 15px 0;
         text-decoration: none;
         text-align: center;
+    }
+    #form p a{
+        text-decoration: none;
     }
 
     /*Estilização do metóde de sessão via redes*/
@@ -511,6 +518,9 @@
         text-decoration: none;
         text-align: center;
     }
+    #form p a{
+        text-decoration: none;
+    }
     /*Estilizando ja tem conta*/
     #paEntrar{
         margin: 10px 0 ;
@@ -526,12 +536,11 @@
         margin: 10px 0;
     }
     /*Estilizacao dos btn de redes sociias*/
-    .logarFaceGoogle button{
+    /*.logarFaceGoogle a img{
         height: 40px;
         width: 100px;
-        border: 1px orangered  solid;
-        border-radius: 5px;
-    }
+       background-color: blue;
+    }*/
 
 
 
@@ -559,6 +568,8 @@
         display: flex;
         
     }
+    
+
     /*estilizar conteinne criar conta*/
     
      .criarConta{
