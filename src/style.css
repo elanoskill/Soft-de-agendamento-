@@ -192,7 +192,6 @@
     .pedirKino{
         display: flex;
         flex-direction: row;
-        height: 400px;
         width: 98%;
         border-top: 1px orange solid;
         margin: 0 auto;
@@ -207,21 +206,38 @@
         display: flex;
         
     }
-    .pedirKino button{
-        background-color: orangered;
+     .pedirKino button{
+        background-color: rgb(233, 88, 36);
         width: 100px;
-        height: 40px;
+        height: 35px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 12px;
+        margin: 20px 0;
+        animation: animarBtnPedirKino 1s ease-in-out alternate infinite;
+
+    }
+    /*animacao do botao pedir kino*/
+    @keyframes animarBtnPedirKino {
+        0%{
+            transform: translateY(20%);
+        }
+         100%{
+            transform: translateY(0%);
+        }
+        
+    }
+    /*estilo do testo pedir kino*/
+    .pedirKino p{
+        font-size: 20px;
+        color: rgb(233, 88, 36);
+        font-family:Helvetica;
+    }
+    .img{
+        border: 1px orange solid;
         border-radius: 10px;
         
 
-    }
-    .img{
-        background-image: url(../public/kinoDelivery.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        border-radius: 10px;
     }
     /*Estilo do rodape*/
     footer .direitos{
@@ -263,5 +279,599 @@
     .sociais img{
         margin: 0 10px;
     }
+
+}
+/*Estilização da parte do dispositivo ipod*/
+@media(min-width:481px) and (max-width:769px){
+    body{
+        height: 100vh;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    /*Estilizando cabecalho da pagina*/
+    .header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgb(255, 235, 199);
+        justify-content: space-between;
+        border: 1px orange solid;
+        position: fixed;
+    }
+    /*Estilizando o menu */
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.397);
+        animation: animarMenu 2s ease ;
+        display:none ;
+        justify-content: flex-end;
+        transition-property: block;
+        
+    }
+    /*estilizando menu*/
+    .menu{
+        height: 100vh;
+        width: 70%;
+        background-color: orangered;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+
+        
+        
+    }
+    /*estilo do cabecalho menu*/
+    .Cabeçalho-menu{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: antiquewhite;
+        margin-bottom: 20px;
+    }
+    .menu li{
+        margin-right: 10px;
+        padding: 10px;
+        display: block;
+        border-top: 1px #000 solid;
+        font-size: 25px;
+    }
+    .menu li a{
+        text-decoration: none;
+    }
+    .mostrar{
+        display: flex;
+    }
+    
+    #submenu-categoria,.submenus{
+        display: none;
+        
+
+    }
+    @keyframes animarMenu {
+        0%{
+            transform: translateX(50%);
+        }
+         100%{
+            transform: translateX(0%);
+        }
+        
+    }
+    .conta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        padding: 0 5px;
+        justify-content: flex-end;
+    
+    }
+     #logar{
+        display: none;
+    }
+    .conta input{
+        width: 300px;
+        height: 50px;
+        margin: 0px 10px;
+        padding: 10px;
+        border: 1px orange solid;
+        border-radius: 10px;
+
+
+    }
+    #iconMenu, #carrinho{
+        margin: 0 20px;
+    }
+    /*final de estilo do menu*/
+    .conteinnerBanner{
+        background-image: url(../public/kinoDelivery.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 98%;
+        height: 300px;
+        margin: 0px auto;
+        margin-top: 88px;
+        border:  1px #000 solid;
+        display: flex;
+    }
+    .conteinnerBanner p{
+        width: 40%;
+        font-size: 50px;
+        font-family: Helvetica;
+        margin: 5px 5px;
+        justify-content: space-between;
+
+    }
+    .redes{
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       padding: 10px;
+    }
+    
+    .logoRedes{
+        margin: auto 0;
+        
+
+    }
+    /*estilo da categoria*/
+    .categorias{
+        display: flex;
+        flex-direction: column;
+    }
+    .categorias header{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .categorias header a{
+        text-decoration: none;
+    }
+    /*estilo de produtos que vao estar na categorias*/
+    .sessao{
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin: 5px 5px;
+        
+    }
+    /*estilo da div pra do chef*/
+    .pratos-chef{
+        border-top: 1px orange solid;
+        padding: 10px;
+    }
+    /*cabecalho do pratos dos chef*/
+    .pratos-chef header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        height: 40px;
+    }
+    .pratos-chef nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .pratos-chef nav ul li{
+       margin: 5px;
+    }
+    .pratos-chef nav ul li a{
+        text-decoration: none;
+       
+    }
+    /* fim da estlizacao do menu prato do chef*/
+
+    /*div pedir kinu*/
+    .pedirKino{
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        border-top: 1px orange solid;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    /*cabecalho da div pedir kino*/
+    .pedirKino div{
+        flex-direction: column;
+        width: 40%;
+        display: flex;
+        
+    }
+    .pedirKino p{
+        font-size: 40px;
+        color: rgb(233, 88, 36);
+        font-family:Helvetica;
+    }
+    .pedirKino button{
+         background-color: rgb(233, 88, 36);
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        margin: 20px 0;
+        animation: animarBtnPedirKino 1s ease-in-out alternate infinite;
+
+    }
+    /*animacao do botao pedir kino*/
+    @keyframes animarBtnPedirKino {
+        0%{
+            transform: translateY(20%);
+        }
+         100%{
+            transform: translateY(0%);
+        }
+        
+    }
+    .img{
+        border: 1px orange solid;
+        border-radius: 10px;
+        
+    }
+    /*Estilo do rodape*/
+    footer .direitos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(233, 88, 36);
+        padding: 10px;
+    
+
+    }
+    /*estilizacao do aside*/
+    aside{
+        
+        margin: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    /*estilo de apoio ao cliente*/
+    .apoioCliente{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .sobre h3{
+        font-size: 20px;
+    }
+    .apoioCliente a{
+        font-size: 20px;
+        text-decoration: none;
+        margin: 2px 0px;
+    }
+
+    /*estilo dos icons socias do rodape*/
+    .sociais{
+        display: flex;
+        
+    }
+    .sociais img{
+        margin: 0 10px;
+    }
+    
+    
+
+}
+/*Estilização da parte do dispositivo desktop*/
+@media(min-width:770px){
+    body{
+        height: 100vh;
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        flex-direction: column;
+       
+    
+    }
+    /*Estilizando cabecalho da pagina*/
+    .header{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        background-color: rgb(255, 235, 199);
+        justify-content: space-between;
+        border: 1px orange solid;
+        position: fixed;
+    }
+    /*Estilizando o menu */
+    .nav{
+        display:flex ;
+        justify-content: flex-end;
+         width: 50%;
+         margin: 0 auto;
+         align-items: center;
+        
+    }
+    .logo img{
+        width: 150px;
+        height: 100px;
+        margin-right: 200px;
+    }
+    /*estilizando menu*/
+    .menu{
+        display: flex;
+        flex-direction: row;
+        font-size: 18px;
+        margin: 0 50px;        
+    }
+    /*estilo do cabecalho menu*/
+    .Cabeçalho-menu{
+        display: none;
+       
+    }
+    .menu li{
+        margin-right: 10px;
+        padding: 10px;
+        display: block;
+        font-size: 25px;
+    }
+    .menu li a{
+        text-decoration: none;
+    }
+    .mostrar{
+        display: flex;
+    }
+    #menu-categoria, .menus{
+        position:relative ;
+    }
+    
+    #submenu-categoria,.submenus{
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 232, 190);
+        border-top: 1px orange solid;
+    }
+     #submenu-categoria li,.submenus li{
+        border-top: 1px orange solid;
+    }
+     #ul:hover #submenu-categoria ul{
+        display: block;
+         background-color: rgb(241, 202, 130);
+    }
+
+    .conta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        padding: 0 5px;
+        justify-content: flex-end;
+    
+    }
+     #iconMenu{
+        display:none ;
+    }
+    .conta input{
+        width: 350px;
+        height: 50px;
+        margin: 0px 10px;
+        padding: 10px;
+        border: 1px orange solid;
+        border-radius: 10px;
+
+
+    }
+    #iconMenu, #logar{
+        margin: 0 20px;
+    }
+    /*final de estilo do menu*/
+    .conteinnerBanner{
+        background-image: url(../public/kinoDelivery.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 98%;
+        height: 400px;
+        margin: 0px auto;
+        margin-top: 108px;
+        border:  1px #000 solid;
+        display: flex;
+        padding: 20px;
+    }
+    .conteinnerBanner p{
+        width: 40%;
+        font-size: 80px;
+        font-family: Helvetica;
+        margin: 5px 5px;
+        justify-content: space-between;
+        
+
+    }
+    .redes{
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+       padding: 10px;
+    }
+    
+    .logoRedes{
+        margin: auto 0;
+        height: 200px;
+        width: 200px;
+        
+        
+    }
+    #logoRedes{
+        width: 100%;
+        height: 100%;
+
+    }
+    /*estilo da categoria*/
+    .categorias{
+        display: flex;
+        flex-direction: column;
+    }
+    .categorias header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .categorias header a{
+        text-decoration: none;
+    }
+    /*estilo de produtos que vao estar na categorias*/
+    .sessao{
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        margin: 5px 5px;
+        overflow: scroll;
+        scrollbar-width: none;
+        
+    }
+    /*estilo da div pra do chef*/
+    .pratos-chef{
+        border-top: 1px orange solid;
+        padding: 10px;
+    }
+    /*cabecalho do pratos dos chef*/
+    .pratos-chef header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px;
+        height: 100px;
+    }
+    .pratos-chef nav ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    .pratos-chef nav ul li{
+       margin: 5px;
+    }
+    .pratos-chef nav ul li a{
+        text-decoration: none;
+       
+    }
+    /* fim da estlizacao do menu prato do chef*/
+
+    /*div pedir kinu*/
+    .pedirKino{
+        display: flex;
+        flex-direction: row;
+        width: 98%;
+        border-top: 1px orange solid;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+    }
+    /*cabecalho da div pedir kino*/
+    .pedirKino div{
+        flex-direction: column;
+        width: 40%;
+        display: flex;
+        
+    }
+    .pedirKino p{
+        font-size: 50px;
+        color: rgb(233, 88, 36);
+        font-family:Helvetica;
+    }
+    .pedirKino button{
+         background-color: rgb(233, 88, 36);
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        margin: 20px 0;
+        animation: animarBtnPedirKino 1s ease-in-out alternate infinite;
+        position: fixed;
+        z-index: 2;
+        bottom: 35%;
+
+    }
+    /*animacao do botao pedir kino*/
+    @keyframes animarBtnPedirKino {
+        0%{
+            transform: translateY(20%);
+        }
+         100%{
+            transform: translateY(0%);
+        }
+        
+    }
+    .img{
+        border: 1px orange solid;
+        border-radius: 10px;
+        height: 500px;
+        width: 400px;
+        
+    }
+    /*Estilo do rodape*/
+    footer .direitos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(233, 88, 36);
+        padding: 10px;
+    
+
+    }
+    /*estilizacao do aside*/
+    aside{
+        
+        margin: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    /*estilo de apoio ao cliente*/
+    .apoioCliente{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .sobre h3{
+        font-size: 20px;
+    }
+    .apoioCliente a{
+        font-size: 20px;
+        text-decoration: none;
+        margin: 2px 0px;
+    }
+
+    /*estilo dos icons socias do rodape*/
+    .sociais{
+        display: flex;
+        
+    }
+    .sociais img{
+        margin: 0 10px;
+    }
+    
+    
 
 }
