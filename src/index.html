@@ -3,75 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../public/kino.svg">
-   <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="icon" href="../public/kino.svg">
+    <title>home</title>
 </head>
-<body>   
-    <!--div que contem a imgem do delivery-->
-    <div class="img">
-        <!-- aqui esta a imagem do homem da byke-->
-
-    </div>
-         <!-- div formulario-->
-    <div class=" formulario">
-        <!--Logo do kino-->
-        <img src="../public/kino (1).svg" alt="logotipo do kino" width="80px" height="80px" id="logo">
-        <H1>Iniciar Sessão</H1>
-        <!--formulario de login, com oss seus respetivos campos-->
-        <form id="form">
-             <label for="user">Usuário</label>
-             <input type="text" id="user" placeholder="Introduza dados de Usuário" required>
-        <label for="senha">Palavra-passe</label>
-        <input type="password" id="senha" placeholder="Introduza palavra-passe de Usuário" autocomplete="no" required>
-        <button type="submit" id="btn"><div class="load"><div class="loading"></div></div>Entrar</button>
-        <p>Esqueci palavra-passe <a href="#">clica aqui</a></p>
-        <!--Div para sessao de outra forma, face ou google-->
-        <div class="logarFaceGoogle">
-            <a href="#"><img src="icons/facebook.svg" alt="icon facebook" width="40px" height="40px"></a>
-            <a href="#" ><img src="icons/google-circle.svg" alt="icon google" width="40px" height="40px"></a>
+<body>
+    <!--Cabeçalho da pagina-->
+    <header class="header">
+        <div class="logo">
+            <img src="../public/kino.svg" alt="logotipo do kino" width="80px" height="80px">
         </div>
-        </form>
-        
-        <p>Não tem conta? <a href="#" id="criar">Criar</a></p>
-       
-    </div>
+        <!--Menu principal da página-->
+        <nav class="nav">
+           
+            <ul class="menu">
+                 <header class="Cabeçalho-menu">
+                    <a href="views/login/login.html"><img src="icons/user.svg" alt="icon conta" width="40px" height="40px"></a>
+                    <a href="#"><img src="icons/poibir.svg" alt="icon carrinho" width="40px" height="40px"></a>
+                </header>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#" id="menu-categoria">Categorias
+                        <ul id="submenu-categoria">
+                            <li>
+                                <a href="#">Pequeno Almoço</a>
+                            </li>
+                            <li>
+                                <a href="#">Almoço</a>
+                            </li>
+                            <li>
+                                <a href="#">Jantar</a>
+                            </li>
+                            <li>
+                                <a href="#">Lanche</a>
+                            </li>
 
-     <!--Modal para criar conta-->
-    <div class="modal">
-        <div class="criarConta">
-             <!--Logo do kino-->
-            <img src="../public/kino (1).svg" alt="logotipo do kino" width="80px" height="80px" id="logo-Conta">
-            <H1>Criar Conta</H1>
-        <!--formulario conta conta, com oss seus respetivos campos-->
-        <form id="form-criar">
-            <label for="NomeCriar">Nome</label>
-            <input type="text" id="NomeCriar" placeholder="Introduza Nome" autocomplete="no" required>
-            <label for="userCriar">Usuário</label>
-            <input type="text" id="userCriar" placeholder="Introduza  Usuário" autocomplete="no" required>
-            <label for="senhaCriar">Palavra-passe</label>
-            <input type="password" id="senhaCriar" placeholder="Introduza palavra-passe" autocomplete="no" required>
-            <div class="estudante">
-                <!--Div para selecao de estudante-->
-                
-                <div class="opcao">
-                    <!--<h4>Estudante?</h4>
-                    <label >Sim</label><input class="input" type="radio" value="sim" name="estudante" required>
-                    <label >Não</label><input type="radio" value="não" name="estudante" required>-->
-                    </div>
-            </div>
+
+                        </ul>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="menus">Menu
+                        <ul class="submenus">
+                            <li>
+                                <a href="#">Meus pedidos</a>
+                            </li>
+                            <li>
+                                <a href="#">Comidas prontas</a>
+                            </li>
+
+
+                        </ul>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Div que contem o formulário de pesquisar kino com os seus campos-->
+        <div class="conta">
+            <form >
+                <input type="search" required placeholder="Encontrar  Kino">
+            </form>
+            <a href="#"><img src="icons/mercado.svg" id="carrinho" alt="icon carrinho" width="40px" height="40px"></a>
+            <a href="#"><img src="icons/user.svg" id="logar" alt="icon conta" width="40px" height="40px"></a>
+            <a href="#"><img src="icons/menu.svg" id="iconMenu" alt="icon conta" width="40px" height="40px"></a>
             
-            <button type="submit"> Criar conta</button>
-        </form>
-            <p id="paEntrar">já tem conta? <a href="#" id="entrar">Entrar</a></p>
+    </header>
+    <main>
+        <!--div que contem o formulario de login com os seus campos-->
+        <div class="conteinnerBanner">
+            <p>Seu kino à distância de um click</p>
+            <div class="redes">
+                <div class="redeSocial">
+                    <a href="https://wa.me/938628116"><img src="icons/whatsapp-circle.svg" alt="whatsap" width="40px" height="40px"></a>
+                    <a href="www.instagram.com/elano-skill/"><img src="icons/instagram-circle.svg" alt="instagram" width="40px" height="40px"></a>
+                    <a href="www.facebook.com/elano-skill/"><img src="icons/facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                </div>
+                <div class="logoRedes">
+            <img src="../../public/kino (1).svg" alt="logotipo do kino" width="80px" height="80px">
         </div>
-     </div>
-     
-        <!--Div que vai mostrar notificação de erro de login-->
-     <div class="notificacao">
-        <p>Erro, senha ou usuário errado!</p>
+
+            </div>
+        </div>
+        <!--Div categorias aqui vai estar as categorias de produtos-->
+        <div class="categorias">
+            <header>
+                <h3>Categorias</h3>
+                <a href="#">Ver todos</a>
+            </header>
+            <!--Aqui nesta div vao estar os produtos-->
+            <div class="sessao">
+                aqui onde vai estar as categorias
+            </div>
+        </div>
+    </main>
+    <!-- div onde estara os pratos do chef-->
+    <div class="pratos-chef">
+        <header>
+            <h4>Kinos do chef</h4>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Todos</a>
+                    </li>
+                    <li>
+                        <a href="#">Prontos</a>
+                    </li>
+                    <li>
+                        <a href="#">Preparados</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="pratos">
+            aqui vai estar pratos do chef
+        </div>
     </div>
-     
-    <script src="script.js"></script>
+    <!--div pedir kino-->
+    <div class="pedirKino">
+        <header>
+            <p>
+                Entrega rápidas e segura só na kino
+            </p>
+            <button>Pedir kino</button>
+        </header>
+        <!--imagem do delivery-->
+        <div class="img">
+            aqui vai estar a imagem do delivery
+        </div>
+    </div>
+    <!--Outras informações-->
+    <aside>
+        <div class="sobre">
+            <h3>Sobre Kino</h3>
+        </div>
+        <div class="apoioCliente">
+            <h3>Apoio Ao cliente</h3>
+            <a href="#">Contacta-nos</a>
+            <a href="#">Politica de privacidade</a>
+            <a href="#">Canal de reclamação</a>
+
+        </div>
+
+    </aside>
+    <!--rodapé do sistema-->
+    <footer>
+        <div class="direitos">
+            <p>©Kino 2026</p>
+            <p>Todos os direitos reservados</p>
+            <div class="sociais">
+                siga-nos
+                <a href="#">Whatsapp</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+    
 </body>
 </html>
