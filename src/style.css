@@ -11,6 +11,7 @@
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         flex-direction: column;
+    
     }
     /*Estilizando cabecalho da pagina*/
     .header{
@@ -49,6 +50,7 @@
         
         
     }
+    /*estilo do cabecalho menu*/
     .Cabeçalho-menu{
         padding: 20px;
         width: 100%;
@@ -71,11 +73,7 @@
     .mostrar{
         display: flex;
     }
-    #menu-categoria{
-        
-        
-        
-    }
+    
     #submenu-categoria,.submenus{
         display: none;
         
@@ -104,6 +102,7 @@
     #iconMenu, #carrinho{
         margin: 0 10px;
     }
+    /*final de estilo do menu*/
     .conteinnerBanner{
         background-image: url(../public/kinoDelivery.png);
         background-position: center;
@@ -154,7 +153,6 @@
     /*estilo de produtos que vao estar na categorias*/
     .sessao{
         height: 100px;
-        overflow: scroll;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -189,5 +187,81 @@
        
     }
     /* fim da estlizacao do menu prato do chef*/
+
+    /*div pedir kinu*/
+    .pedirKino{
+        display: flex;
+        flex-direction: row;
+        height: 400px;
+        width: 98%;
+        border-top: 1px orange solid;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    /*cabecalho da div pedir kino*/
+    .pedirKino div{
+        flex-direction: column;
+        width: 40%;
+        display: flex;
+        
+    }
+    .pedirKino button{
+        background-color: orangered;
+        width: 100px;
+        height: 40px;
+        border-radius: 10px;
+        
+
+    }
+    .img{
+        background-image: url(../public/kinoDelivery.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-radius: 10px;
+    }
+    /*Estilo do rodape*/
+    footer .direitos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        background-color: rgb(233, 88, 36);
+        padding: 10px;
+    
+
+    }
+    /*estilizacao do aside*/
+    aside{
+        
+        margin: 5px 5px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    /*estilo de apoio ao cliente*/
+    .apoioCliente{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .apoioCliente a{
+        text-decoration: none;
+        margin: 2px 0px;
+    }
+
+    /*estilo dos icons socias do rodape*/
+    .sociais{
+        display: flex;
+        
+    }
+    .sociais img{
+        margin: 0 10px;
+    }
 
 }
